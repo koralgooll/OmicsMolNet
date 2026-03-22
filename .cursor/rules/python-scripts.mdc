@@ -1,0 +1,10 @@
+---
+description: Prefer Python for scripts and automation in this repo
+alwaysApply: true
+---
+
+# Scripts and automation
+
+- Prefer **Python** for new scripts, CLI tools, one-off automation, and small utilities in this repository.
+- Avoid adding new shell-only or Node-only scripts unless required by an existing toolchain; if you must, document why in the same PR or next to the script.
+- Prefer a clear entry point (e.g. `python path/to/script.py` or `python -m package.module`) and a short docstring or README note on how to run it.
