@@ -25,6 +25,18 @@ Optional (enterprise only):
 docker compose -f docker/docker-compose.yml up -d
 ```
 
+## Connect Flowise to OmicsMolNet MCP (SSE)
+
+Once the stack is running, the MCP server is reachable from **inside Docker** at:
+
+- `http://omicsmolnet-mcp:8010/sse`
+
+and from your host at:
+
+- `http://localhost:8010/sse`
+
+In Flowise, add a Custom MCP server using **SSE** transport and point it at the `/sse` URL above.
+
 ## Stop
 
 ```sh

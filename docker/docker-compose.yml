@@ -16,6 +16,17 @@ services:
       - flowise_data:/root/.flowise
     entrypoint: /bin/sh -c "sleep 3; flowise start"
 
+  omicsmolnet-mcp:
+    build:
+      context: ..
+      dockerfile: docker/images/omicsmolnet-mcp/Dockerfile
+    restart: unless-stopped
+    environment:
+      OMN_MCP_HOST: 0.0.0.0
+      OMN_MCP_PORT: 8010
+    ports:
+      - "8010:8010"
+
   flowise-init:
     image: python:3.12-alpine
     depends_on:
