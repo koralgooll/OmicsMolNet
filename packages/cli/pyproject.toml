@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omicsmolnet-cli"
+version = "0.1.0"
+description = "CLI helpers for OmicsMolNet"
+requires-python = ">=3.11"
+dependencies = ["omicsmolnet-core", "omicsmolnet-data", "omicsmolnet-agent-graph"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+dev = ["ruff", "mypy"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+omicsmolnet = "omicsmolnet_cli.main:main"
+

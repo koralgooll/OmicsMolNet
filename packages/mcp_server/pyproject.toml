@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omicsmolnet-mcp-server"
+version = "0.1.0"
+description = "Flowise-facing MCP server (SSE) for OmicsMolNet"
+requires-python = ">=3.11"
+dependencies = [
+  "omicsmolnet-core",
+  "omicsmolnet-data",
+  "omicsmolnet-agent-graph",
+  "mcp",
+  "uvicorn",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+dev = ["ruff", "mypy"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+omicsmolnet-mcp = "omicsmolnet_mcp.server:main"
+

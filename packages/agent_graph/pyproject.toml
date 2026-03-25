@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omicsmolnet-agent-graph"
+version = "0.1.0"
+description = "LangChain/LangGraph graphs and nodes for OmicsMolNet"
+requires-python = ">=3.11"
+dependencies = [
+  "omicsmolnet-core",
+  "omicsmolnet-data",
+  "langchain",
+  "langgraph",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+dev = ["ruff", "mypy"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
