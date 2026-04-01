@@ -9,3 +9,5 @@ alwaysApply: true
 - Avoid adding new shell-only or Node-only scripts unless required by an existing toolchain; if you must, document why in the same PR or next to the script.
 - If a **collective/shared** script is needed for developer setup or CI, **only bash (`.sh`) is acceptable** (no PowerShell).
 - Prefer a clear entry point (e.g. `python path/to/script.py` or `python -m package.module`) and a short docstring or README note on how to run it.
+- Use **Python 3.12** for local venvs and scripts in this repo (avoid Python 3.14+ due to ecosystem incompatibilities).
+- Do **not** assume optional variables, fields, features, or “nice-to-have” functionality. If something is optional or ambiguous, **ask in chat first** and wait for a clear yes/no before implementing it.
