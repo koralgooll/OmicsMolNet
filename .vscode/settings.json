@@ -26,6 +26,10 @@
       "--rcfile",
       "${workspaceFolder}\\.bashrc"
     ]
-  }
+  },
+  "cSpell.words": [
+    "agentic",
+    "Omics"
+  ]
 }
 
