@@ -1,16 +1,20 @@
 # OmicsMolNet
 
+
 ## Tagline
 
 Infrastructure for agent-driven biological research
+
 
 ### Description
 
 OmicsMolNet is an AI-native platform that builds unified molecular interaction networks from multi-omics data, enabling autonomous research workflows through agentic AI and MCP-based integration.
 
+
 ## Development setup (pip + venv)
 
 This repository is a single repo with multiple installable Python packages under `packages/`.
+
 
 ### One-time setup (bash)
 
