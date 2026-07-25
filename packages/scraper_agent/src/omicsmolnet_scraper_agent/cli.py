@@ -8,48 +8,17 @@ Usage:
 
 from __future__ import annotations
 
-import argparse
 import json
 import sys
 from pathlib import Path
 
 from omicsmolnet_scraper_agent.graph import build_graph
 from omicsmolnet_scraper_agent.state import ScraperState
-from omicsmolnet_scraper_agent.utils import logger, set_log_level
-
-
-def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        prog="omicsmolnet-scraper",
-        description="Fetch UniProt publication data for a list of protein IDs.",
-    )
-    parser.add_argument(
-        "--config",
-        metavar="PATH",
-        help="Path to YAML file containing a list of protein IDs.",
-    )
-    parser.add_argument(
-        "--ids",
-        nargs="+",
-        metavar="ID",
-        help="One or more UniProt protein IDs (e.g. A1A4S6 O43826). Combined with --config.",
-    )
-    parser.add_argument(
-        "--output",
-        metavar="PATH",
-        help="Write JSON results to this file (default: stdout).",
-    )
-    parser.add_argument(
-        "--log-level",
-        default="INFO",
-        choices=["DEBUG", "INFO", "WARNING", "ERROR"],
-        help="Logging verbosity (default: INFO).",
-    )
-    return parser.parse_args(argv)
+from omicsmolnet_scraper_agent.utils import logger, parse_args, set_log_level
 
 
 def main(argv: list[str] | None = None) -> None:
-    args = _parse_args(argv)
+    args = parse_args(argv)
 
     set_log_level(args.log_level)
 
