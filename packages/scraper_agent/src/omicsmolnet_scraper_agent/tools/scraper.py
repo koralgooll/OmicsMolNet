@@ -25,9 +25,8 @@ def _parse_entry(entry: dict) -> Publication:
     citation = entry.get("citation", {})
 
     title: str = citation.get("title", "")
-    authors: list[str] = [
-        a.get("value", "") for a in citation.get("authors", []) if a.get("value")
-    ]
+    # authors is a list of plain strings in the UniProt REST API response
+    authors: list[str] = [a for a in citation.get("authors", []) if isinstance(a, str)]
     journal: str = citation.get("journal", "")
 
     publication_date: str = citation.get("publicationDate", "")
@@ -38,15 +37,16 @@ def _parse_entry(entry: dict) -> Publication:
         except ValueError:
             pass
 
-    pubmed_id: str | None = citation.get("pubMedId")
-    pubmed_url: str | None = f"{_PUBMED_BASE}/{pubmed_id}/" if pubmed_id else None
-
+    # PubMed ID is in citationCrossReferences under database="PubMed"
+    pubmed_url: str | None = None
     doi: str | None = None
     other_links: list[str] = []
     for db_ref in citation.get("citationCrossReferences", []):
         db = db_ref.get("database", "")
         db_id = db_ref.get("id", "")
-        if db == "DOI":
+        if db == "PubMed":
+            pubmed_url = f"{_PUBMED_BASE}/{db_id}/"
+        elif db == "DOI":
             doi = db_id
         elif db_id:
             other_links.append(f"{db}:{db_id}")

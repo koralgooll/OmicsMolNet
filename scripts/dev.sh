@@ -35,11 +35,7 @@ echo "[dev.sh] Upgrading pip"
 python -m pip install --upgrade pip
 
 echo "[dev.sh] Installing OmicsMolNet packages (editable)"
-pip install -e packages/core
-pip install -e packages/data
-pip install -e packages/agent_graph
-pip install -e packages/mcp_server
-pip install -e packages/cli
+pip install -e packages/scraper_agent
 
 echo "[dev.sh] Done."
 if [[ -f "$VENV_DIR/bin/activate" ]]; then
