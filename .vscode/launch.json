@@ -13,20 +13,7 @@
             "justMyCode": false
         },
         {
-            "name": "Scraper: --ids O00462",
-            "type": "debugpy",
-            "request": "launch",
-            "module": "omicsmolnet_scraper_agent.cli",
-            "console": "integratedTerminal",
-            "python": "${workspaceFolder}/.venv/bin/python",
-            "justMyCode": false,
-            "args": [
-                "--ids", "O00462",
-                "--log-level", "DEBUG"
-            ]
-        },
-        {
-            "name": "Scraper: --ids P02649",
+            "name": "TMP RUN Scraper: --ids P02649",
             "type": "debugpy",
             "request": "launch",
             "module": "omicsmolnet_scraper_agent.cli",
@@ -48,6 +35,20 @@
             "justMyCode": false,
             "args": [
                 "--config", "/home/cezary/science/OmicsMolNet/packages/scraper_agent/configs/ids.yaml",
+                "--log-level", "DEBUG"
+            ]
+        },
+        {
+            "name": "Scraper: --ids O00462",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "omicsmolnet_scraper_agent.cli",
+            "console": "integratedTerminal",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "justMyCode": false,
+            "args": [
+                "--output", "${workspaceFolder}/output/results_phase_1.json",
+                "--ids", "O00462",
                 "--log-level", "DEBUG"
             ]
         },
