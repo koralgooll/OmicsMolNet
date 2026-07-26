@@ -61,6 +61,8 @@ def test_fetch_publications_calls_correct_url(mock_get):
     mock_response = MagicMock()
     mock_response.json.return_value = {"results": []}
     mock_response.raise_for_status.return_value = None
+    mock_response.headers = {"X-Total-Results": "0"}
+    mock_response.links = {}
     mock_get.return_value = mock_response
 
     result = fetch_publications("A1A4S6")
@@ -69,3 +71,27 @@ def test_fetch_publications_calls_correct_url(mock_get):
     called_url = mock_get.call_args[0][0]
     assert "A1A4S6" in called_url
     assert result == []
+
+
+@patch("omicsmolnet_scraper_agent.tools.scraper.requests.get")
+def test_fetch_publications_follows_pagination(mock_get):
+    entry = _citation(title="Paginated paper", publicationDate="2020")
+
+    page1 = MagicMock()
+    page1.json.return_value = {"results": [entry] * 25}
+    page1.raise_for_status.return_value = None
+    page1.headers = {"X-Total-Results": "30"}
+    page1.links = {"next": {"url": "https://rest.uniprot.org/uniprotkb/X99999/publications?cursor=abc&size=500"}}
+
+    page2 = MagicMock()
+    page2.json.return_value = {"results": [entry] * 5}
+    page2.raise_for_status.return_value = None
+    page2.headers = {}
+    page2.links = {}
+
+    mock_get.side_effect = [page1, page2]
+
+    result = fetch_publications("X99999")
+
+    assert mock_get.call_count == 2
+    assert len(result) == 30

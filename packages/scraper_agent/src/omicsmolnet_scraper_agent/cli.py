@@ -9,24 +9,19 @@ Usage:
 from __future__ import annotations
 
 import json
-import sys
 from pathlib import Path
 
 from omicsmolnet_scraper_agent.graph import build_graph
 from omicsmolnet_scraper_agent.state import ScraperState
-from omicsmolnet_scraper_agent.utils import logger, parse_args, set_log_level
+from omicsmolnet_scraper_agent.utils import logger, parse_args
 
 
 def main(argv: list[str] | None = None) -> None:
     args = parse_args(argv)
 
-    set_log_level(args.log_level)
-
-    if not args.config and not args.ids:
-        logger.error("Provide at least --config or --ids (or both).")
-        sys.exit(1)
-
-    graph = build_graph()
+    graph = build_graph(
+        uniprot_resolve_missing_publications=args.uniprot_resolve_missing_publications,
+    )
     initial_state: ScraperState = {
         "config_path": args.config,
         "extra_ids": args.ids or [],

@@ -64,34 +64,33 @@ def fan_out_ids(state: ScraperState) -> list[Send]:
     ]
 
 
-def process_single_id(state: IdState) -> dict[str, Any]:
-    """Full per-ID pipeline: fetch publications, then resolve any missing URLs.
-
-    Returns {"results": [IdState]} — a valid ScraperState partial update.
-    Routing (LLM fallback vs skip) is plain Python here rather than graph edges
-    because all Send arms write to the same parent state channels.
-    """
-    protein_id = state["id"]
-
-    try:
-        publications = fetch_publications(protein_id)
-        state = {**state, "publications": publications}
-    except Exception as exc:
-        logger.error(f"Failed to fetch publications for {protein_id}: {exc}")
-        state = {**state, "errors": [*state.get("errors", []), str(exc)]}
-
-    needs_resolution = any(
-        pub.get("pubmed_url") is None and pub.get("doi") is None
-        for pub in state.get("publications", [])
-    )
-    if needs_resolution:
-        state = resolve_missing_publications(state)
-
-    return {"results": [state]}
-
-
-def build_graph() -> Any:
+def build_graph(uniprot_resolve_missing_publications: bool = True) -> Any:
     """Construct and compile the publication scraping StateGraph."""
+
+    def process_single_id(state: IdState) -> dict[str, Any]:
+        """Full per-ID pipeline: fetch publications, then resolve any missing URLs.
+
+        Returns {"results": [IdState]} — a valid ScraperState partial update.
+        Routing (LLM fallback vs skip) is plain Python here rather than graph edges
+        because all Send arms write to the same parent state channels.
+        """
+        protein_id = state["id"]
+
+        try:
+            publications = fetch_publications(protein_id)
+            state = {**state, "publications": publications}
+        except Exception as exc:
+            logger.error(f"Failed to fetch publications for {protein_id}: {exc}")
+            state = {**state, "errors": [*state.get("errors", []), str(exc)]}
+
+        if uniprot_resolve_missing_publications and any(
+            pub.get("pubmed_url") is None and pub.get("doi") is None
+            for pub in state.get("publications", [])
+        ):
+            state = resolve_missing_publications(state)
+
+        return {"results": [state]}
+
     builder = StateGraph(ScraperState)
 
     builder.add_node("load_ids", load_ids_node)

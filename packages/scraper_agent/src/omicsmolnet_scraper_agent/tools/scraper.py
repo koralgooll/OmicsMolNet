@@ -60,24 +60,32 @@ def _parse_entry(entry: dict) -> Publication:
         doi=doi,
         other_links=other_links,
         resolved_url=None,
+        confidence=1.0 if (pubmed_url or doi) else 0.0,
     )
 
 
 def fetch_publications(protein_id: str) -> list[Publication]:
     """Fetch all publications for a UniProt protein ID via the REST API.
 
-    Returns a list of Publication dicts with pubmed_url set where available.
+    Follows cursor-based pagination via the Link: rel="next" response header
+    until all pages are consumed.
     Raises requests.HTTPError on non-2xx responses.
     """
     url = _build_publications_url(protein_id)
     logger.debug(f"Fetching publications for {protein_id} from {url}")
 
-    response = requests.get(url, headers=_HEADERS, timeout=_REQUEST_TIMEOUT)
+    all_entries: list[dict] = []
+
+    response = requests.get(url, headers=_HEADERS, params={"size": 500}, timeout=_REQUEST_TIMEOUT)
     response.raise_for_status()
+    total = int(response.headers.get("X-Total-Results", 0))
+    all_entries.extend(response.json().get("results", []))
 
-    data = response.json()
-    results = data.get("results", [])
-    publications = [_parse_entry(entry) for entry in results]
+    while next_url := response.links.get("next", {}).get("url"):
+        response = requests.get(next_url, headers=_HEADERS, timeout=_REQUEST_TIMEOUT)
+        response.raise_for_status()
+        all_entries.extend(response.json().get("results", []))
 
-    logger.info(f"Fetched {len(publications)} publications for {protein_id}")
+    publications = [_parse_entry(entry) for entry in all_entries]
+    logger.info(f"Fetched {len(publications)} / {total} publications for {protein_id}")
     return publications

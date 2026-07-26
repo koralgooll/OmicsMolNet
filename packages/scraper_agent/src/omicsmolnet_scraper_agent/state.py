@@ -12,6 +12,7 @@ class Publication(TypedDict):
     doi: str | None
     other_links: list[str]
     resolved_url: str | None
+    confidence: float  # 1.0 for pubmed_url/doi from UniProt; LLM score for resolved_url
 
 
 class IdState(TypedDict):

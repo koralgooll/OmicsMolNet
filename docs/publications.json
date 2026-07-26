@@ -1,0 +1,1081 @@
+{
+    "results": [
+        {
+            "citation": {
+                "id": "9384606",
+                "citationType": "UniProt indexed literatures",
+                "authors": [
+                    "Alkhayat A.H.",
+                    "Kraemer S.A.",
+                    "Leipprandt J.R.",
+                    "Macek M.",
+                    "Kleijer W.J.",
+                    "Friderici K.H."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "9384606"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1093/hmg/7.1.75"
+                    }
+                ],
+                "title": "Human beta-mannosidase cDNA characterization and first identification of a mutation associated with human beta-mannosidosis.",
+                "publicationDate": "1998",
+                "journal": "Hum. Mol. Genet.",
+                "firstPage": "75",
+                "lastPage": "83",
+                "volume": "7",
+                "completeAuthorList": true,
+                "literatureAbstract": "Human beta-mannosidosis is an autosomal recessive, lysosomal storage disease caused by a deficiency of the enzyme beta-mannosidase. Unlike the severe clinical manifestation of the disease in ruminants, in which it leads to neonatal death, the human disease phenotype is generally milder. In addition, the phenotypic manifestation among the reported cases of human beta-mannosidosis is variable, even among members of the same family. To understand the molecular basis of the human disease and the mechanisms for such clinical variability, we sequenced the entire coding region of the human beta-mannosidase gene using a combination of cDNA library screening, RT-PCR and 5' rapid amplification of cDNA ends (RACE). The composite cDNA is 3293 nt, consisting of an 87 nt 5'- untranslated region, 2640 nt coding region and 566 nt 3'-untranslated region. The gene was localized to human chromosome 4q22-25. Analysis of a multiple tissue northern blot demonstrated a single 3.7 kb transcript. Mutation analysis of a Czech gypsy family with two siblings differently affected with beta- mannosidosis demonstrated a homozygous A-->G transition 2 bp upstream of a splice acceptor site. The associated cryptic splice site activation and exon skipping caused by this mutation resulted in two abnormally spliced mutant mRNA species in both siblings."
+            },
+            "references": [
+                {
+                    "source": {
+                        "name": "UniProtKB reviewed (Swiss-Prot)"
+                    },
+                    "citationId": "9384606",
+                    "sourceCategories": [
+                        "Sequences",
+                        "Disease & Variants",
+                        "Expression"
+                    ],
+                    "referencePositions": [
+                        "NUCLEOTIDE SEQUENCE [MRNA]",
+                        "INVOLVEMENT IN MANSB",
+                        "VARIANT ILE-253",
+                        "TISSUE SPECIFICITY"
+                    ],
+                    "referenceNumber": 0
+                }
+            ],
+            "statistics": {
+                "reviewedProteinCount": 1,
+                "unreviewedProteinCount": 0,
+                "computationallyMappedProteinCount": 2,
+                "communityMappedProteinCount": 0
+            }
+        },
+        {
+            "citation": {
+                "id": "CI-3PTJS2C1V7RLV",
+                "citationType": "submission",
+                "authors": [
+                    "Chang H.-M.",
+                    "Tsai S.-F."
+                ],
+                "title": "Genome sequencing of the chromosome 4q region implicated in human hepatocellular carcinoma pathogenesis.",
+                "publicationDate": "DEC-1999",
+                "submissionDatabase": "EMBL/GenBank/DDBJ databases"
+            },
+            "references": [
+                {
+                    "source": {
+                        "name": "UniProtKB reviewed (Swiss-Prot)"
+                    },
+                    "citationId": "CI-3PTJS2C1V7RLV",
+                    "sourceCategories": [
+                        "Sequences"
+                    ],
+                    "referencePositions": [
+                        "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+                    ],
+                    "referenceNumber": 1
+                }
+            ],
+            "statistics": {
+                "reviewedProteinCount": 3,
+                "unreviewedProteinCount": 0,
+                "computationallyMappedProteinCount": 0,
+                "communityMappedProteinCount": 0
+            }
+        },
+        {
+            "citation": {
+                "id": "15489334",
+                "citationType": "UniProt indexed literatures",
+                "authoringGroup": [
+                    "The MGC Project Team"
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "15489334"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1101/gr.2596504"
+                    }
+                ],
+                "title": "The status, quality, and expansion of the NIH full-length cDNA project: the Mammalian Gene Collection (MGC).",
+                "publicationDate": "2004",
+                "journal": "Genome Res.",
+                "firstPage": "2121",
+                "lastPage": "2127",
+                "volume": "14",
+                "completeAuthorList": true,
+                "literatureAbstract": "The National Institutes of Health's Mammalian Gene Collection (MGC) project was designed to generate and sequence a publicly accessible cDNA resource containing a complete open reading frame (ORF) for every human and mouse gene. The project initially used a random strategy to select clones from a large number of cDNA libraries from diverse tissues. Candidate clones were chosen based on 5'-EST sequences, and then fully sequenced to high accuracy and analyzed by algorithms developed for this project. Currently, more than 11,000 human and 10,000 mouse genes are represented in MGC by at least one clone with a full ORF. The random selection approach is now reaching a saturation point, and a transition to protocols targeted at the missing transcripts is now required to complete the mouse and human collections. Comparison of the sequence of the MGC clones to reference genome sequences reveals that most cDNA clones are of very high sequence quality, although it is likely that some cDNAs may carry missense variants as a consequence of experimental artifact, such as PCR, cloning, or reverse transcriptase errors. Recently, a rat cDNA component was added to the project, and ongoing frog (Xenopus) and zebrafish (Danio) cDNA projects were expanded to take advantage of the high-throughput MGC pipeline."
+            },
+            "references": [
+                {
+                    "source": {
+                        "name": "UniProtKB reviewed (Swiss-Prot)"
+                    },
+                    "citationId": "15489334",
+                    "sourceCategories": [
+                        "Sequences"
+                    ],
+                    "referenceComments": [
+                        {
+                            "value": "Muscle",
+                            "type": "TISSUE"
+                        }
+                    ],
+                    "referencePositions": [
+                        "NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA]",
+                        "VARIANT MET-701"
+                    ],
+                    "referenceNumber": 2
+                }
+            ],
+            "statistics": {
+                "reviewedProteinCount": 32643,
+                "unreviewedProteinCount": 17711,
+                "computationallyMappedProteinCount": 0,
+                "communityMappedProteinCount": 0
+            }
+        },
+        {
+            "citation": {
+                "id": "12890191",
+                "citationType": "UniProt indexed literatures",
+                "authors": [
+                    "Uchino Y.",
+                    "Fukushige T.",
+                    "Yotsumoto S.",
+                    "Hashiguchi T.",
+                    "Taguchi H.",
+                    "Suzuki N.",
+                    "Konohana I.",
+                    "Kanzaki T."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "12890191"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1046/j.1365-2133.2003.05365.x"
+                    }
+                ],
+                "title": "Morphological and biochemical studies of human beta-mannosidosis: identification of a novel beta-mannosidase gene mutation.",
+                "publicationDate": "2003",
+                "journal": "Br. J. Dermatol.",
+                "firstPage": "23",
+                "lastPage": "29",
+                "volume": "149",
+                "completeAuthorList": true,
+                "literatureAbstract": "<h4>Background</h4>There are seven well-known lysosomal storage diseases that produce angiokeratoma corporis diffusum clinically. beta-Mannosidosis (MANB1; OMIM248510), first reported in humans in 1986, is a rare hereditary lysosomal storage disease caused by a deficiency of the enzyme beta-mannosidase. Since then, 13 cases of beta-mannosidase deficiency in ten families have been described. A human beta-mannosidase mutation has been reported only by Alkhayat et al. in 1998.<h4>Objectives</h4>To clarify its pathogenesis we did electron microscopic, biochemical and molecular biological investigations of a Japanese patient with beta-mannosidosis.<h4>Methods</h4>Ultrastructural analyses, enzyme assays, cell culture and mRNA and genomic DNA were sequenced to find mutations in the beta-mannosidase gene.<h4>Results</h4>Electron microscopy of skin biopsy specimens from the patient showed cytoplasmic vacuolation of lysosomes in blood and lymph vessels, endothelial cells, fibroblasts, secretory portions of eccrine sweat glands, neural cells and basal keratinocytes in the epidermis. This vacuolation was also observed in cultured keratinocytes and fibroblasts. Assays of seven enzyme activities in plasma and cultured skin fibroblasts showed a marked decrease of beta-mannosidase activity. Sequencing the beta-mannosidase cDNA revealed a four-base (ATAA) insertion between exons 7 and 8, resulting in a frameshift at codon 321 and termination at codon 325. Analysis of the patient's genomic DNA revealed a novel homozygous A(+1)-->G splice site mutation in intron 7.<h4>Conclusions</h4>To our knowledge, this is the first case of beta- mannosidosis reported in Japan and the second report in which a gene mutation is identified. The biological importance of beta-mannose moieties in glycoproteins in basal keratinocytes is suggested."
+            },
+            "references": [
+                {
+                    "source": {
+                        "name": "UniProtKB reviewed (Swiss-Prot)"
+                    },
+                    "citationId": "12890191",
+                    "sourceCategories": [
+                        "Function",
+                        "Disease & Variants"
+                    ],
+                    "referencePositions": [
+                        "FUNCTION",
+                        "INVOLVEMENT IN MANSB",
+                        "CATALYTIC ACTIVITY",
+                        "PATHWAY"
+                    ],
+                    "referenceNumber": 3
+                }
+            ],
+            "statistics": {
+                "reviewedProteinCount": 1,
+                "unreviewedProteinCount": 0,
+                "computationallyMappedProteinCount": 0,
+                "communityMappedProteinCount": 0
+            }
+        },
+        {
+            "citation": {
+                "id": "16904924",
+                "citationType": "UniProt indexed literatures",
+                "authors": [
+                    "Gort L.",
+                    "Duque J.",
+                    "Fabeiro J.M.",
+                    "Zulaica A.",
+                    "Coll M.J.",
+                    "Chabas A."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "16904924"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1016/j.ymgme.2006.07.001"
+                    }
+                ],
+                "title": "Molecular analysis in two beta-mannosidosis patients: description of a new adult case.",
+                "publicationDate": "2006",
+                "journal": "Mol. Genet. Metab.",
+                "firstPage": "398",
+                "lastPage": "400",
+                "volume": "89",
+                "completeAuthorList": true,
+                "literatureAbstract": "beta-Mannosidosis is a lysosomal storage disorder caused by deficiency of beta- mannosidase. Thirteen families with cases of beta-mannosidosis have been described including one case previously reported by our group. We present clinical and biochemical data in a new adult case, and the molecular analyses in both this new case and the one previously reported. We detected four novel mutations: p.R182W, p.G392E, p.W466X and c.1848delA. Discrepancies between genomic DNA and cDNA results when detecting this last deletion suggested a nonsense-mediated decay cell process (NMD)."
+            },
+            "references": [
+                {
+                    "source": {
+                        "name": "UniProtKB reviewed (Swiss-Prot)"
+                    },
+                    "citationId": "16904924",
+                    "sourceCategories": [
+                        "Function",
+                        "Sequences"
+                    ],
+                    "referencePositions": [
+                        "VARIANTS MANSB TRP-182; GLU-392 AND 466-TRP--TYR-879 DEL",
+                        "CATALYTIC ACTIVITY"
+                    ],
+                    "referenceNumber": 4
+                }
+            ],
+            "statistics": {
+                "reviewedProteinCount": 1,
+                "unreviewedProteinCount": 0,
+                "computationallyMappedProteinCount": 0,
+                "communityMappedProteinCount": 0
+            }
+        },
+        {
+            "citation": {
+                "id": "18565776",
+                "citationType": "UniProt indexed literatures",
+                "authors": [
+                    "Riise Stensland H.M.",
+                    "Persichetti E.",
+                    "Sorriso C.",
+                    "Hansen G.M.",
+                    "Bibi L.",
+                    "Paciotti S.",
+                    "Balducci C.",
+                    "Beccari T."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "18565776"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1016/j.ymgme.2008.04.010"
+                    }
+                ],
+                "title": "Identification of two novel beta-mannosidosis-associated sequence variants: biochemical analysis of beta-mannosidase (MANBA) missense mutations.",
+                "publicationDate": "2008",
+                "journal": "Mol. Genet. Metab.",
+                "firstPage": "476",
+                "lastPage": "480",
+                "volume": "94",
+                "completeAuthorList": true,
+                "literatureAbstract": "Beta-mannosidosis (OMIM # 248510) is an autosomal-recessive lysosomal storage disorder caused by deficiency of the lysosomal enzyme beta-mannosidase (MANBA, E.C. 3.2.1.25). The disorder has been reported in goat, cattle and man. The human disorder is rare and only 20 cases in 16 families have been reported. We have sequenced the exons and exon-intron borders in a European patient with infantile onset of beta-mannosidosis. The patient was compound heterozygous for a silent mutation (c.375A>G) in exon 3 causing alternative splicing, and a missense mutation (c.1513T>C, p.Ser505Pro) in exon 12. The alternative splicing event deleted four nucleotides from the transcript and was predicted to result in premature termination of translation. In order to evaluate the consequence of the missense mutation, we inserted the human beta-mannosidase gene into an expression vector, performed site-directed mutagenesis and expressed the normal and mutant enzyme in COS-7 cells. We also included the previously reported beta- mannosidosis-associated missense mutations c.544C>T (p.Arg182Trp) and c.1175G>A (p.Gly392Glu), which were found in patients presenting a milder phenotype. Cells transfected with the wild-type construct showed a 33-fold increase in beta- mannosidase activity compared to mock-transfected cells, whereas cells transfected with the mutant constructs showed no detectable increase in activity. We propose that the milder phenotype described in some beta- mannosidosis patients with missense mutations in the MANBA gene is not due to residual beta-mannosidase activity, but rather caused by epigenetic and/or environmental factors."
+            },
+            "references": [
+                {
+                    "source": {
+                        "name": "UniProtKB reviewed (Swiss-Prot)"
+                    },
+                    "citationId": "18565776",
+                    "sourceCategories": [
+                        "Function",
+                        "Sequences",
+                        "Disease & Variants"
+                    ],
+                    "referencePositions": [
+                        "VARIANT MANSB PRO-505",
+                        "CHARACTERIZATION OF VARIANTS MANSB TRP-182; GLU-392 AND PRO-505",
+                        "CHARACTERIZATION OF VARIANT ILE-253",
+                        "CATALYTIC ACTIVITY",
+                        "MUTAGENESIS OF ARG-638; ARG-641 AND LEU-749"
+                    ],
+                    "referenceNumber": 5
+                }
+            ],
+            "statistics": {
+                "reviewedProteinCount": 1,
+                "unreviewedProteinCount": 0,
+                "computationallyMappedProteinCount": 0,
+                "communityMappedProteinCount": 0
+            }
+        },
+        {
+            "citation": {
+                "id": "30552791",
+                "citationType": "UniProt indexed literatures",
+                "authors": [
+                    "Gytz H.",
+                    "Liang J.",
+                    "Liang Y.",
+                    "Gorelik A.",
+                    "Illes K.",
+                    "Nagar B."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "30552791"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1111/febs.14731"
+                    }
+                ],
+                "title": "The structure of mammalian beta-mannosidase provides insight into beta- mannosidosis and nystagmus.",
+                "publicationDate": "2019",
+                "journal": "FEBS J.",
+                "firstPage": "1319",
+                "lastPage": "1331",
+                "volume": "286",
+                "completeAuthorList": true,
+                "literatureAbstract": "β-Mannosidase is a lysosomal enzyme from the glycosyl hydrolase family 2 that cleaves the single β(1-4)-linked mannose at the nonreducing end of N- glycosylated proteins, and plays an important role in the polysaccharide degradation pathway. Mutations in the MANBA gene, which encodes the β- mannosidase, can lead to the lysosomal storage disease β-mannosidosis, as well as nystagmus, an eye condition characterized by involuntary eye movements. Here, we present the first structures of a mammalian β-mannosidase in both the apo- and mannose-bound forms. The structure is similar to previously determined β- mannosidase structures with regard to domain organization and fold, however, there are important differences that underlie substrate specificity between species. Additionally, in contrast to most other ligand-bound β-mannosidases from bacterial and fungal sources where bound sugars were in a boat-like conformation, we find the mannose in the chair conformation. Evaluation of known disease mutations in the MANBA gene provides insight into their impact on disease phenotypes. Together, these results will be important for the design of therapeutics for treating diseases caused by β-mannosidase deficiency. DATABASE: Structural data are available in the Protein Data Bank under the accession numbers 6DDT and 6DDU."
+            },
+            "references": [
+                {
+                    "source": {
+                        "name": "UniProtKB reviewed (Swiss-Prot)"
+                    },
+                    "citationId": "30552791",
+                    "sourceCategories": [
+                        "Function",
+                        "Sequences"
+                    ],
+                    "referencePositions": [
+                        "CHARACTERIZATION OF VARIANTS MANSB TRP-182; GLU-392; 466-TRP--TYR-879 DEL AND PRO-505",
+                        "FUNCTION",
+                        "CATALYTIC ACTIVITY",
+                        "PATHWAY",
+                        "BIOPHYSICOCHEMICAL PROPERTIES"
+                    ],
+                    "referenceNumber": 6
+                }
+            ],
+            "statistics": {
+                "reviewedProteinCount": 2,
+                "unreviewedProteinCount": 0,
+                "computationallyMappedProteinCount": 1,
+                "communityMappedProteinCount": 0
+            }
+        },
+        {
+            "citation": {
+                "id": "8692836",
+                "citationType": "UniProt indexed literatures",
+                "authors": [
+                    "Le Cabec V.",
+                    "Cowland J.B.",
+                    "Calafat J.",
+                    "Borregaard N."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "8692836"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1073/pnas.93.13.6454"
+                    }
+                ],
+                "title": "Targeting of proteins to granule subsets is determined by timing and not by sorting: The specific granule protein NGAL is localized to azurophil granules when expressed in HL-60 cells.",
+                "publicationDate": "1996",
+                "journal": "Proc Natl Acad Sci U S A",
+                "firstPage": "6454",
+                "lastPage": "6457",
+                "volume": "93",
+                "completeAuthorList": true,
+                "literatureAbstract": "The mechanism of protein targeting to individual granules in cells that contain different subsets of storage granules is poorly understood. The neutrophil contains two highly distinct major types of granules, the peroxidase positive (azurophil) granules and the peroxidase negative (specific and gelatinase) granules. We hypothesized that targeting of proteins to individual granule subsets may be determined by the stage of maturation of the cell, at which the granule proteins are synthesized, rather than by individual sorting information present in the proteins. This was tested by transfecting the cDNA of the specific granule protein, NGAL, which is normally synthesized in metamyelocytes, into the promyelocytic cell line HL-60, which is developmentally arrested at the stage of formation of azurophil granules, and thus does not contain specific and gelatinase granules. Controlled by a cytomegalovirus promoter, NGAL was constitutively expressed in transfected HL-60 cells. This resulted in the targeting of NGAL to azurophil granules as demonstrated by colocalization of NGAL with myeloperoxidase, visualized by immunoelectron microscopy. This shows that targeting of proteins into distinct granule subsets may be determined solely by the time of their biosynthesis and does not depend on individual sorting information present in the proteins."
+            },
+            "references": [
+                {
+                    "source": {
+                        "name": "Reactome",
+                        "id": "R-HSA-6799128"
+                    },
+                    "citationId": "8692836",
+                    "sourceCategories": [
+                        "Function"
+                    ],
+                    "annotation": "Pathway"
+                },
+                {
+                    "source": {
+                        "name": "Reactome",
+                        "id": "R-HSA-6806257"
+                    },
+                    "citationId": "8692836",
+                    "sourceCategories": [
+                        "Function"
+                    ],
+                    "annotation": "Pathway"
+                }
+            ],
+            "statistics": {
+                "reviewedProteinCount": 0,
+                "unreviewedProteinCount": 0,
+                "computationallyMappedProteinCount": 144,
+                "communityMappedProteinCount": 0
+            }
+        },
+        {
+            "citation": {
+                "id": "35897697",
+                "citationType": "UniProt indexed literatures",
+                "authors": [
+                    "Gonzalez-Jimenez A.",
+                    "Lopez-Cotarelo P.",
+                    "Agudo-Jimenez T.",
+                    "Casanova I.",
+                    "Silanes C.L.",
+                    "Martin-Requero A.",
+                    "Matesanz F.",
+                    "Urcelay E.",
+                    "Espino-Paisan L."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "35897697"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.3390/ijms23158116"
+                    }
+                ],
+                "title": "Impact of Multiple Sclerosis Risk Polymorphism rs7665090 on MANBA Activity, Lysosomal Endocytosis, and Lymphocyte Activation.",
+                "publicationDate": "2022",
+                "journal": "Int J Mol Sci",
+                "firstPage": "8116",
+                "lastPage": "8116",
+                "volume": "23",
+                "completeAuthorList": true,
+                "literatureAbstract": "Deficiencies in Mannosidase β (MANBA) are associated with neurological abnormalities and recurrent infections. The single nucleotide polymorphism located in the 3′UTR of MANBA, rs7665090, was found to be associated with multiple sclerosis (MS) susceptibility. We aimed to study the functional impact of this polymorphism in lymphocytes isolated from MS patients and healthy controls. A total of 152 MS patients and 112 controls were genotyped for rs7665090. MANBA mRNA expression was quantified through qPCR and MANBA enzymatic activity was analyzed. Upon phytohemagglutinin stimulation, immune activation was evaluated by flow cytometry detection of CD69, endocytic function, and metabolic rates with Seahorse XFp Analyzer, and results were stratified by variation in rs7665090. A significantly reduced gene expression (p < 0.0001) and enzymatic activity (p = 0.018) of MANBA were found in lymphocytes of MS patients compared to those of controls. The rs7665090*GG genotype led to a significant β- mannosidase enzymatic deficiency correlated with lysosomal dysfunction, as well as decreased metabolic activation in lymphocytes of MS patients compared to those of rs7665090*GG controls. In contrast, lymphocytes of MS patients and controls carrying the homozygous AA genotype behaved similarly. Our work provides new evidence highlighting the impact of the MS-risk variant, rs7665090, and the role of MANBA in the immunopathology of MS."
+            },
+            "references": [
+                {
+                    "source": {
+                        "name": "GeneRif",
+                        "id": "4126"
+                    },
+                    "citationId": "35897697",
+                    "sourceCategories": [
+                        "Function",
+                        "Disease & Variants"
+                    ],
+                    "annotation": "Impact of Multiple Sclerosis Risk Polymorphism rs7665090 on MANBA Activity Lysosomal Endocytosis and Lymphocyte Activation."
+                }
+            ],
+            "statistics": {
+                "reviewedProteinCount": 0,
+                "unreviewedProteinCount": 0,
+                "computationallyMappedProteinCount": 5,
+                "communityMappedProteinCount": 0
+            }
+        },
+        {
+            "citation": {
+                "id": "34870556",
+                "citationType": "UniProt indexed literatures",
+                "authors": [
+                    "Chen X.",
+                    "Yao T.",
+                    "Cai J.",
+                    "Zhang Q.",
+                    "Li S.",
+                    "Li H.",
+                    "Fu X.",
+                    "Wu J."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "34870556"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1080/15622975.2021.2014248"
+                    }
+                ],
+                "title": "A novel genetic variant potentially altering the expression of <i>MANBA</i> in the cerebellum associated with attention deficit hyperactivity disorder in Han Chinese children.",
+                "publicationDate": "2022",
+                "journal": "World J Biol Psychiatry",
+                "firstPage": "548",
+                "lastPage": "559",
+                "volume": "23",
+                "completeAuthorList": true,
+                "literatureAbstract": "<h4>Objectives</h4>To obtain additional insight into the genetic factors of attention deficit hyperactivity disorder (ADHD).<h4>Methods</h4>First, we performed a transcriptome-wide association study (TWAS) integrating human cerebellum-specific variant-expression/splicing correlations to identify ADHD susceptibility genes. Then, the associations between expression/splicing quantitative trait loci (eQTLs/sQTLs) of the transcriptome-wide significant genes and ADHD were observed in a case-control study of Han Chinese children. Furthermore, dual luciferase reporter gene assays were performed to validate the regulatory function of ADHD risk variants. Additionally, the transcription level of target genes in blood was detected by real-time quantitative polymerase chain reaction (RT-qPCR) assay.<h4>Results</h4>TWAS identified that the genetically regulated expression of <i>MANBA</i> in the cerebellum was significantly associated with ADHD risk. Furthermore, we observed a higher risk of ADHD and more severe clinical symptoms in subjects harbouring heterozygous (TC) or mutant homozygous (TT) genotypes of <i>MANBA</i> rs1054037 than CC carriers. The dual luciferase reporter gene assay revealed that the mutation of rs1054037(C > T) potentially upregulated <i>MANBA</i> expression by eliminating the binding site for hsa-miR-5591-3P. Finally, RT-qPCR showed that <i>MANBA</i> expression in blood samples of patients was significantly higher than that of controls.<h4>Conclusions</h4>Taken together, these results suggest a role of <i>MANBA</i> in the development of ADHD."
+            },
+            "references": [
+                {
+                    "source": {
+                        "name": "GeneRif",
+                        "id": "4126"
+                    },
+                    "citationId": "34870556",
+                    "sourceCategories": [
+                        "Expression"
+                    ],
+                    "annotation": "A novel genetic variant potentially altering the expression of MANBA in the cerebellum associated with attention deficit hyperactivity disorder in Han Chinese children."
+                }
+            ],
+            "statistics": {
+                "reviewedProteinCount": 0,
+                "unreviewedProteinCount": 0,
+                "computationallyMappedProteinCount": 5,
+                "communityMappedProteinCount": 0
+            }
+        },
+        {
+            "citation": {
+                "id": "33441424",
+                "citationType": "UniProt indexed literatures",
+                "authors": [
+                    "Gu X.",
+                    "Yang H.",
+                    "Sheng X.",
+                    "Ko Y.A.",
+                    "Qiu C.",
+                    "Park J.",
+                    "Huang S.",
+                    "Kember R.",
+                    "Judy R.L.",
+                    "Park J.",
+                    "Damrauer S.M.",
+                    "Nadkarni G.",
+                    "Loos R.J.F.",
+                    "My V.T.H.",
+                    "Chaudhary K.",
+                    "Bottinger E.P.",
+                    "Paranjpe I.",
+                    "Saha A.",
+                    "Brown C.",
+                    "Akilesh S.",
+                    "Hung A.M.",
+                    "Palmer M.",
+                    "Baras A.",
+                    "Overton J.D.",
+                    "Reid J.",
+                    "Ritchie M.",
+                    "Rader D.J.",
+                    "Susztak K."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "33441424"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1126/scitranslmed.aaz1458"
+                    }
+                ],
+                "title": "Kidney disease genetic risk variants alter lysosomal beta-mannosidase (&lt;i&gt;MANBA&lt;/i&gt;) expression and disease severity.",
+                "publicationDate": "2021",
+                "journal": "Sci Transl Med",
+                "firstPage": "eaaz1458",
+                "lastPage": "eaaz1458",
+                "volume": "13",
+                "completeAuthorList": true,
+                "literatureAbstract": "More than 800 million people in the world suffer from chronic kidney disease (CKD). Genome-wide association studies (GWAS) have identified hundreds of loci where genetic variants are associated with kidney function; however, causal genes and pathways for CKD remain unknown. Here, we performed integration of kidney function GWAS and human kidney-specific expression quantitative trait analysis and identified that the expression of beta-mannosidase (<i>MANBA</i>) was lower in kidneys of subjects with CKD risk genotype. We also show an increased incidence of renal failure in subjects with rare heterozygous loss-of- function coding variants in <i>MANBA</i> using phenome-wide association analysis of 40,963 subjects with exome sequencing data. <i>MANBA</i> is a lysosomal gene highly expressed in kidney tubule cells. Deep phenotyping revealed structural and functional lysosomal alterations in human kidneys from subjects with CKD risk alleles and mice with genetic deletion of <i>Manba</i> <i>Manba</i> heterozygous and knockout mice developed more severe kidney fibrosis when subjected to toxic injury induced by cisplatin or folic acid. <i>Manba</i> loss altered multiple pathways, including endocytosis and autophagy. In the absence of <i>Manba,</i> toxic acute tubule injury induced inflammasome activation and fibrosis. Together, these results illustrate the convergence of common noncoding and rare coding variants in <i>MANBA</i> in kidney disease development and demonstrate the role of the endolysosomal system in kidney disease development."
+            },
+            "references": [
+                {
+                    "source": {
+                        "name": "GeneRif",
+                        "id": "4126"
+                    },
+                    "citationId": "33441424",
+                    "sourceCategories": [
+                        "Disease & Variants"
+                    ],
+                    "annotation": "Kidney disease genetic risk variants alter lysosomal beta-mannosidase (MANBA) expression and disease severity."
+                }
+            ],
+            "statistics": {
+                "reviewedProteinCount": 0,
+                "unreviewedProteinCount": 0,
+                "computationallyMappedProteinCount": 7,
+                "communityMappedProteinCount": 0
+            }
+        },
+        {
+            "citation": {
+                "id": "30528300",
+                "citationType": "UniProt indexed literatures",
+                "authors": [
+                    "Hitomi Y.",
+                    "Nakatani K.",
+                    "Kojima K.",
+                    "Nishida N.",
+                    "Kawai Y.",
+                    "Kawashima M.",
+                    "Aiba Y.",
+                    "Nagasaki M.",
+                    "Nakamura M.",
+                    "Tokunaga K."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "30528300"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1016/j.jcmgh.2018.11.006"
+                    }
+                ],
+                "title": "NFKB1 and MANBA Confer Disease Susceptibility to Primary Biliary Cholangitis via Independent Putative Primary Functional Variants.",
+                "publicationDate": "2019",
+                "journal": "Cell Mol Gastroenterol Hepatol",
+                "firstPage": "515",
+                "lastPage": "532",
+                "volume": "7",
+                "completeAuthorList": true,
+                "literatureAbstract": "<h4>Background & aims</h4>Primary biliary cholangitis (PBC) is a chronic and cholestatic liver disease that eventually leads to cirrhosis and hepatic failure. We recently identified several susceptibility genes included NFKB1 and MANBA for PBC in the Japanese population by genome-wide association study. However, the primary functional variants in the NFKB1/MANBA region and the molecular mechanism for conferring disease susceptibility to PBC have not yet been clarified.<h4>Methods</h4>We performed high-density association mapping based on a single-nucleotide polymorphism (SNP) imputation analysis, using data from a whole-genome sequence reference panel of 1070 Japanese individuals and the previous genome-wide association study (1389 PBC patients, 1508 healthy controls). Among SNPs (P < 5.0 × 10<sup>-7</sup>) in the NFKB1/MANBA region, putative primary functional variants and the molecular mechanism for conferring disease susceptibility to PBC were identified by in silico/in vitro functional analysis.<h4>Results</h4>Among the SNPs in the NFKB1/MANBA region, rs17032850 and rs227361, which changed the binding of transcription factors lymphoid enhancer-binding factor 1 (LEF-1) and retinoid X receptor α (RXRα), respectively, were identified as putative primary functional variants that regulate gene expression. In addition, expression-quantitative trait locus data and gene editing using a clustered regularly interspaced short palindromic repeat (CRISPR)/Cas9 system supported the potential role of rs17032850 and rs227361 in regulating NFKB1 and MANBA expression, respectively.<h4>Conclusions</h4>We identified independent putative primary functional variants in NFKB1/MANBA and showed the distinct molecular mechanism by which each putative primary functional variant conferred susceptibility to PBC. Our approach was useful to dissect the pathogenesis not only of PBC, but also other digestive diseases in which NFKB1/MANBA has been reported as a susceptibility locus."
+            },
+            "references": [
+                {
+                    "source": {
+                        "name": "GeneRif",
+                        "id": "4126"
+                    },
+                    "citationId": "30528300",
+                    "sourceCategories": [
+                        "Names",
+                        "Function",
+                        "Disease & Variants"
+                    ],
+                    "annotation": "independent putative primary functional variants in NFKB1/MANBA and showed the distinct molecular mechanism by which each putative primary functional variant conferred susceptibility to Primary biliary cholangitis were identified."
+                }
+            ],
+            "statistics": {
+                "reviewedProteinCount": 0,
+                "unreviewedProteinCount": 0,
+                "computationallyMappedProteinCount": 6,
+                "communityMappedProteinCount": 0
+            }
+        },
+        {
+            "citation": {
+                "id": "20800603",
+                "citationType": "UniProt indexed literatures",
+                "authors": [
+                    "Flachsbart F.",
+                    "Franke A.",
+                    "Kleindorp R.",
+                    "Caliebe A.",
+                    "Blanche H.",
+                    "Schreiber S.",
+                    "Nebel A."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "20800603"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1016/j.mrfmmm.2010.08.006"
+                    }
+                ],
+                "title": "Investigation of genetic susceptibility factors for human longevity - a targeted nonsynonymous SNP study.",
+                "publicationDate": "2010",
+                "journal": "Mutat Res",
+                "firstPage": "13",
+                "lastPage": "19",
+                "volume": "694",
+                "completeAuthorList": true,
+                "literatureAbstract": "Twin studies have shown that longevity in humans is moderately heritable with a genetic component of 25-32%. Experimental model organisms point to the existence of core survival and anti-ageing pathways that have been conserved throughout evolution. It has been shown that mutations in single genes involved in these pathways can either delay or accelerate the ageing process and that many of these genes and pathways are also present in humans. Here, we performed a targeted investigation of selected genes (i) involved in longevity pathways (insulin receptor/insulin-like growth factor-I signaling and energy metabolism, intracellular signaling, apoptosis and stress response) and (ii) in which mutations lead to genetic perturbations in animal models or human diseases. Altogether, we tested 500 nonsynonymous single nucleotide polymorphisms (SNPs) in 343 candidate genes for association with the longevity phenotype in a German sample comprising about 400 centenarians and an equal number of younger control subjects. Thus, this study presents one of the largest candidate studies in human genetic longevity research conducted to-date. The three top-ranking markers, which are located in the genes DUSP6, NALP1 and PERP, revealed p- values≤0.01 in the allelic case-control comparisons. Although the association signals in Germans were not replicated in an independent French sample, the large number of analysis results is deemed a valuable reference point for further genetic studies."
+            },
+            "references": [
+                {
+                    "source": {
+                        "name": "GeneRif",
+                        "id": "4126"
+                    },
+                    "citationId": "20800603",
+                    "sourceCategories": [
+                        "Sequences",
+                        "Disease & Variants"
+                    ],
+                    "annotation": "Observational study of gene-disease association. (HuGE Navigator)"
+                }
+            ],
+            "statistics": {
+                "reviewedProteinCount": 0,
+                "unreviewedProteinCount": 0,
+                "computationallyMappedProteinCount": 1483,
+                "communityMappedProteinCount": 0
+            }
+        },
+        {
+            "citation": {
+                "id": "20332099",
+                "citationType": "UniProt indexed literatures",
+                "authors": [
+                    "Kalsi G.",
+                    "Kuo P.H.",
+                    "Aliev F.",
+                    "Alexander J.",
+                    "McMichael O.",
+                    "Patterson D.G.",
+                    "Walsh D.",
+                    "Zhao Z.",
+                    "Schuckit M.",
+                    "Nurnberger J. Jr.",
+                    "Edenberg H.",
+                    "Kramer J.",
+                    "Hesselbrock V.",
+                    "Tischfield J.A.",
+                    "Vladimirov V.",
+                    "Prescott C.A.",
+                    "Dick D.M.",
+                    "Kendler K.S.",
+                    "Riley B.P."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "20332099"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1093/hmg/ddq112"
+                    }
+                ],
+                "title": "A systematic gene-based screen of chr4q22-q32 identifies association of a novel susceptibility gene, DKK2, with the quantitative trait of alcohol dependence symptom counts.",
+                "publicationDate": "2010",
+                "journal": "Hum Mol Genet",
+                "firstPage": "2497",
+                "lastPage": "2506",
+                "volume": "19",
+                "completeAuthorList": true,
+                "literatureAbstract": "Studies of alcohol dependence (AD) have consistently found evidence of linkage on chromosome 4q21-q32. A genome-wide linkage scan in the Irish Affected Sib Pair Study of Alcohol Dependence (IASPSAD) sample also provided its strongest evidence of linkage on chromosome 4q22-q32 using an index of AD severity based on the count of DSM-IV AD symptoms (ADSX; LOD = 4.59). We conducted a systematic, gene-centric association study using 518 LD-tagging single nucleotide polymorphisms (SNPs) in the 65 known and predicted genes within the 1-LOD interval surrounding the linkage peak. Case-only regression analysis with the quantitative variable of ADSX was performed in the 562 genetically independent cases; nominal support for association was demonstrated by 32 tagging SNPs in 14 genes. We did not observe study-wide significance, but gene- wise correction for multiple testing with the Nyholt procedure yielded empirical evidence of association with two genes, DKK2 (dickkopf homolog 2) (P = 0.007) and EGF (epidermal growth factor) (P = 0.025) in the IASPSAD sample. Three SNPs in DKK2 (rs427983; rs419558; rs399087) demonstrated empirical significance. Assessment of possible replication in 847 cases of European descent from a large independent sample, the Collaborative Study of the Genetics of Alcoholism, yielded replication for DKK2 but not EGF. We observed genotypic and phenotypic replication for DKK2 with the three SNPs yielding significant association with ADSX in the IASPSAD sample. Haplotype-specific expression measurements in post- mortem tissue samples suggested a functional role for DKK2. This evidence notwithstanding, replication is needed before confidence can be placed in these findings."
+            },
+            "references": [
+                {
+                    "source": {
+                        "name": "GeneRif",
+                        "id": "4126"
+                    },
+                    "citationId": "20332099",
+                    "sourceCategories": [
+                        "Function",
+                        "Disease & Variants"
+                    ],
+                    "annotation": "Observational study of gene-disease association. (HuGE Navigator)"
+                }
+            ],
+            "statistics": {
+                "reviewedProteinCount": 0,
+                "unreviewedProteinCount": 0,
+                "computationallyMappedProteinCount": 232,
+                "communityMappedProteinCount": 0
+            }
+        },
+        {
+            "citation": {
+                "id": "19773279",
+                "citationType": "UniProt indexed literatures",
+                "authors": [
+                    "Hosgood H.D.",
+                    "Zhang L.",
+                    "Shen M.",
+                    "Berndt S.I.",
+                    "Vermeulen R.",
+                    "Li G.",
+                    "Yin S.",
+                    "Yeager M.",
+                    "Yuenger J.",
+                    "Rothman N.",
+                    "Chanock S.",
+                    "Smith M.",
+                    "Lan Q."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "19773279"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1136/oem.2008.044024"
+                    }
+                ],
+                "title": "Association between genetic variants in VEGF, ERCC3 and occupational benzene haematotoxicity.",
+                "publicationDate": "2009",
+                "journal": "Occup Environ Med",
+                "firstPage": "848",
+                "lastPage": "853",
+                "volume": "66",
+                "completeAuthorList": true,
+                "literatureAbstract": "<h4>Introduction</h4>Benzene is an established human haematotoxin, with substantial interindividual variation in benzene-induced toxicity.<h4>Methods</h4>To further examine if genetic variation contributes to benzene haematotoxicity, we analysed 1023 tagSNPs in 121 gene regions important for benzene metabolism, haematopoiesis, leukaemia and lymphoma among 250 workers exposed to benzene and 140 unexposed controls in a cross-sectional study carried out in China. Linear regression was used to analyse the relationship between genetic polymorphisms and total white blood cell (WBC) count and its subtypes, adjusting for potential confounders and occupational exposure to benzene and toluene among exposed workers. The minp test assessed the association on the gene region level. The false discovery rate method was used to control for multiple comparisons.<h4>Results</h4>VEGF (minp = 0.0030) and ERCC3 (minp = 0.0042) were the most significantly associated gene regions with altered WBC counts among benzene-exposed workers, after accounting for multiple comparisons. Highly significant changes were also found for WBC subtype counts, including granulocytes, CD4+ T cells and lymphocytes for VEGF and granulocytes and NK cells for ERCC3. Further, in workers exposed to <1 ppm, a SNP in VEGF was associated with changes in WBC and granulocyte counts, and SNPs in ERCC3 were associated with changes in WBC, NK cell and granulocyte counts.<h4>Discussion</h4>Our findings suggest that genetic variation in VEGF, which plays an important role in blood vessel growth, and ERCC3, which is a member of the DNA repair pathway and is responsible for repairing bulky DNA adducts formed by chemicals, may contribute to individual susceptibility to benzene-induced haematotoxicity at relatively low levels of benzene exposure."
+            },
+            "references": [
+                {
+                    "source": {
+                        "name": "GAD",
+                        "id": "589757"
+                    },
+                    "citationId": "19773279",
+                    "sourceCategories": [
+                        "Disease & Variants"
+                    ],
+                    "annotation": "Not Associated with PHARMACOGENOMIC: benzene haematotoxicity."
+                },
+                {
+                    "source": {
+                        "name": "GeneRif",
+                        "id": "4126"
+                    },
+                    "citationId": "19773279",
+                    "sourceCategories": [
+                        "Function",
+                        "Disease & Variants"
+                    ],
+                    "annotation": "Observational study of gene-disease association. (HuGE Navigator)"
+                }
+            ],
+            "statistics": {
+                "reviewedProteinCount": 0,
+                "unreviewedProteinCount": 0,
+                "computationallyMappedProteinCount": 1427,
+                "communityMappedProteinCount": 0
+            }
+        },
+        {
+            "citation": {
+                "id": "19728872",
+                "citationType": "UniProt indexed literatures",
+                "authors": [
+                    "Sabourdy F.",
+                    "Labauge P.",
+                    "Stensland H.M.",
+                    "Nieto M.",
+                    "Garces V.L.",
+                    "Renard D.",
+                    "Castelnovo G.",
+                    "de Champfleur N.",
+                    "Levade T."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "19728872"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1186/1471-2350-10-84"
+                    }
+                ],
+                "title": "A MANBA mutation resulting in residual beta-mannosidase activity associated with severe leukoencephalopathy: a possible pseudodeficiency variant.",
+                "publicationDate": "2009",
+                "journal": "BMC Med Genet",
+                "firstPage": "84",
+                "lastPage": "84",
+                "volume": "10",
+                "completeAuthorList": true,
+                "literatureAbstract": "<h4>Background</h4>beta-Mannosidosis (OMIM 248510) is a rare inborn lysosomal storage disorder caused by the deficient activity of beta-mannosidase, an enzyme encoded by a single gene (MANBA) located on chromosome 4q22-25. To date, only 20 cases of this autosomal recessive disorder have been described and 14 different MANBA mutations were incriminated in the disease. These are all null mutations or missense mutations that abolish beta-mannosidase activity. In this study, we characterized the molecular defect of a new case of beta-mannosidosis, presenting with a severe neurological disorder.<h4>Methods</h4>Genomic DNA was isolated from peripheral blood leukocytes of the patient to allow MANBA sequencing. The identified mutation was engineered by site-directed mutagenesis and the mutant protein was expressed through transient transfection in HEK293T cells. The beta-mannosidase expression and activity were respectively assessed by Western blot and fluorometric assay in both leukocytes and HEK293T cells.<h4>Results</h4>A missense disease-associated mutation, c.1922G>A (p.Arg641His), was identified for which the patient was homozygous. In contrast to previously described missense mutations, this substitution does not totally abrogate the enzyme activity but led to a residual activity of about 7% in the patient's leukocytes, 11% in lymphoblasts and 14% in plasma. Expression studies in transfected cells also resulted in 7% residual activity.<h4>Conclusion</h4>Correlations between MANBA mutations, residual activity of beta-mannosidase and the severity of the ensuing neurological disorder are discussed. Whether the c.1922G>A mutation is responsible for a yet undescribed pseudodeficiency of beta-mannosidase is also discussed."
+            },
+            "references": [
+                {
+                    "source": {
+                        "name": "GeneRif",
+                        "id": "4126"
+                    },
+                    "citationId": "19728872",
+                    "sourceCategories": [
+                        "Sequences",
+                        "Disease & Variants"
+                    ],
+                    "annotation": "The present analysis of the c.1922G>A MANBA mutation underlines the lack of genotype-phenotype correlation in beta-mannosidosis"
+                }
+            ],
+            "statistics": {
+                "reviewedProteinCount": 0,
+                "unreviewedProteinCount": 0,
+                "computationallyMappedProteinCount": 5,
+                "communityMappedProteinCount": 0
+            }
+        },
+        {
+            "citation": {
+                "id": "17899454",
+                "citationType": "UniProt indexed literatures",
+                "authors": [
+                    "Gao J.",
+                    "Arbman G.",
+                    "He L.",
+                    "Qiao F.",
+                    "Zhang Z.",
+                    "Zhao Z.",
+                    "Rosell J.",
+                    "Sun X.F."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "17899454"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1080/02841860701644052"
+                    }
+                ],
+                "title": "MANBA polymorphism was related to increased risk of colorectal cancer in Swedish but not in Chinese populations.",
+                "publicationDate": "2008",
+                "journal": "Acta Oncol",
+                "firstPage": "372",
+                "lastPage": "378",
+                "volume": "47",
+                "completeAuthorList": true,
+                "literatureAbstract": "beta-mannosidase, encoded by MANBA, has been suggested to be implicated in cancers, while genetic variations in the MANBA in relation to colorectal cancer (CRC) risk has not been examined. In this study, we investigated the relationship of a polymorphic CA repeat in MANBA gene with CRC risk in 152 Swedish CRC patients and 441 Swedish controls, and 196 Chinese CRC patients and 577 Chinese controls, as well as the clinicopathologic significance of this polymorphism on CRC patients, by using capillary electrophoresis. The MANBA genotypes were related to CRC risk in the Swedish population (p=0.03), but not in the Chinese population. In the Swedish population, individuals with < 22 CAs/< 22 CAs had significantly increased risk for CRC compared with those with >or=22 CAs/>or= 22 CAs (gender-age-adjusted analysis: OR 1.93, 95% CI 1.06- 3.51). There was no relationship between the polymorphism and clinicopathologic variables. These findings suggest the different susceptibilities of this polymorphism to CRC development in the two populations."
+            },
+            "references": [
+                {
+                    "source": {
+                        "name": "GeneRif",
+                        "id": "4126"
+                    },
+                    "citationId": "17899454",
+                    "sourceCategories": [
+                        "Sequences"
+                    ],
+                    "annotation": "The MANBA genotypes for a polymorphic CA repeat were related to colorectal cancer risk in a Swedish population but not a Chinese one. In the Swedish population individuals with < 22 CAs/< 22 CAs had a significantly increased risk for CRC; Observational study of gene-disease association. (HuGE Navigator)"
+                }
+            ],
+            "statistics": {
+                "reviewedProteinCount": 0,
+                "unreviewedProteinCount": 0,
+                "computationallyMappedProteinCount": 5,
+                "communityMappedProteinCount": 0
+            }
+        },
+        {
+            "citation": {
+                "id": "17420068",
+                "citationType": "UniProt indexed literatures",
+                "authors": [
+                    "Molho-Pessach V.",
+                    "Bargal R.",
+                    "Abramowitz Y.",
+                    "Doviner V.",
+                    "Ingber A.",
+                    "Raas-Rothschild A.",
+                    "Ne'eman Z.",
+                    "Zeigler M.",
+                    "Zlotogorski A."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "17420068"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1016/j.jaad.2007.01.037"
+                    }
+                ],
+                "title": "Angiokeratoma corporis diffusum in human beta-mannosidosis: Report of a new case and a novel mutation.",
+                "publicationDate": "2007",
+                "journal": "J Am Acad Dermatol",
+                "firstPage": "407",
+                "lastPage": "412",
+                "volume": "57",
+                "completeAuthorList": true,
+                "literatureAbstract": "<h4>Background</h4>Human beta-mannosidosis, a rare disorder of oligosaccharide catabolism, results from a deficiency of beta-mannosidase activity. So far, mutational analysis has been performed in only seven families and revealed 11 mutations in the MANBA gene which encodes the enzyme beta- mannosidase.<h4>Objectives</h4>We report here a 36-year-old Arab female with beta-mannosidosis who presented with mental retardation and multiple angiokeratomas. We describe in this patient a novel null mutation and review the previously reported MANBA gene mutations and their clinical correlations.<h4>Methods</h4>Histopathology, ultrastructural analysis, and enzyme assays were performed. Sequencing of cDNA and genomic DNA analysis was conducted in a search for a mutation in the MANBA gene.<h4>Results</h4>Histopathology of a skin biopsy specimen from the patient showed the characteristic findings of angiokeratoma. Electron microscopy showed cytoplasmic vacuolation. Enzymatic activity of beta-mannosidase in the patient's serum, leukocytes, and fibroblasts was less than 1% of control values. Sequencing of the MANBA cDNA revealed a G-->A transition in exon 6 at nucleotide position c.693, resulting in the formation of a stop codon (W231X).<h4>Limitations</h4>Only one family was studied.<h4>Conclusions</h4>A new case of human beta-mannosidosis is presented and the first MANBA gene mutation from Arab ancestry is reported. Reviewing the reported MANBA gene mutations does not reveal a clear genotype-phenotype correlation. The importance of angiokeratoma corporis diffusum as the clue to the diagnosis of beta- mannosidosis and other lysosomal storage diseases is emphasized."
+            },
+            "references": [
+                {
+                    "source": {
+                        "name": "Reactome",
+                        "id": "R-HSA-8853711"
+                    },
+                    "citationId": "17420068",
+                    "sourceCategories": [
+                        "Function"
+                    ],
+                    "annotation": "Pathway"
+                }
+            ],
+            "statistics": {
+                "reviewedProteinCount": 0,
+                "unreviewedProteinCount": 0,
+                "computationallyMappedProteinCount": 1,
+                "communityMappedProteinCount": 0
+            }
+        },
+        {
+            "citation": {
+                "id": "1576208",
+                "citationType": "UniProt indexed literatures",
+                "authors": [
+                    "Percheron F.",
+                    "Foglietti M.J.",
+                    "Bernard M.",
+                    "Ricard B."
+                ],
+                "citationCrossReferences": [
+                    {
+                        "database": "PubMed",
+                        "id": "1576208"
+                    },
+                    {
+                        "database": "DOI",
+                        "id": "10.1016/0300-9084(92)90179-i"
+                    }
+                ],
+                "title": "Mammalian beta-D-mannosidase and beta-mannosidosis.",
+                "publicationDate": "1992",
+                "journal": "Biochimie",
+                "firstPage": "5",
+                "lastPage": "11",
+                "volume": "74",
+                "completeAuthorList": true,
+                "literatureAbstract": "Lysosomal beta-D-mannosidase is the last exoglycosidase involved in the sequential degradation of the N-glycosylproteins glycans. Research on this enzyme was restricted before the discovery of its hereditary deficiency, first in goat (1981) and later in man (1986). We describe the biochemical aspects of these beta-mannosidosis and the properties of the beta-mannosidases of mammalian origin. Our own results concerning human enzyme (from kidney and urine, seminal plasma and blood cells) suggest that, apart from the case of the inherited disease, beta-mannosidase may become a useful tool in other pathologies."
+            },
+            "references": [
+                {
+                    "source": {
+                        "name": "Reactome",
+                        "id": "R-HSA-8853711"
+                    },
+                    "citationId": "1576208",
+                    "sourceCategories": [
+                        "Function"
+                    ],
+                    "annotation": "Pathway"
+                }
+            ],
+            "statistics": {
+                "reviewedProteinCount": 0,
+                "unreviewedProteinCount": 0,
+                "computationallyMappedProteinCount": 1,
+                "communityMappedProteinCount": 0
+            }
+        }
+    ]
+}

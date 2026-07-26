@@ -12,8 +12,10 @@ Architecture:
 
 from __future__ import annotations
 
+import os
 from typing import Any  # noqa: F401 — kept for build_publication_search_agent return type
 
+import anthropic
 from langchain_anthropic import ChatAnthropic
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.tools import tool
@@ -79,7 +81,7 @@ def build_publication_search_chain() -> Any:
     {title, authors, journal, year} and produces a PublicationResolution.
     """
     llm = ChatAnthropic(model=_MODEL)
-    return _SEARCH_PROMPT | llm.with_structured_output(PublicationResolution)
+    return _SEARCH_PROMPT | llm.with_structured_output(PublicationResolution, include_raw=True)
 
 
 # ---------------------------------------------------------------------------
@@ -139,26 +141,37 @@ def resolve_missing_publications(
     if not unresolved:
         return state
 
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        logger.warning(
+            f"Skipping LLM resolution for {len(unresolved)} publication(s) in "
+            f"'{state['id']}': ANTHROPIC_API_KEY is not set."
+        )
+        return state
+
     chain = build_publication_search_chain()
     resolved_publications: list[Publication] = []
 
-    for pub in state["publications"]:
+    for i, pub in enumerate(state["publications"]):
         if pub.get("pubmed_url") or pub.get("doi"):
             resolved_publications.append(pub)
             continue
 
         try:
-            resolution: PublicationResolution = chain.invoke(
-                {
-                    "title": pub["title"],
-                    "authors": ", ".join(pub.get("authors", [])[:3]),
-                    "journal": pub.get("journal", ""),
-                    "year": pub.get("year", ""),
-                }
-            )
+            prompt_input = {
+                "title": pub["title"],
+                "authors": ", ".join(pub.get("authors", [])[:3]),
+                "journal": pub.get("journal", ""),
+                "year": pub.get("year", ""),
+            }
+            result = chain.invoke(prompt_input)
+            raw_response = result["raw"]  # noqa: F841 — uncomment watchpoint when debugging
+            logger.debug(f"LLM tool_calls: {raw_response.tool_calls}")
+            logger.debug(f"LLM parsing_error: {result['parsing_error']}")
+            resolution: PublicationResolution = result["parsed"]
             if resolution.confidence >= confidence_threshold:
                 resolved_url = resolution.pubmed_url
                 resolved_doi = resolution.doi if not resolved_url else pub.get("doi")
+                llm_confidence = resolution.confidence
                 logger.info(
                     f"Resolved '{pub['title'][:60]}' → {resolved_url or resolved_doi} "
                     f"(confidence={resolution.confidence:.2f})"
@@ -170,13 +183,24 @@ def resolve_missing_publications(
                 )
                 resolved_url = None
                 resolved_doi = pub.get("doi")
+                llm_confidence = resolution.confidence
+        except anthropic.AuthenticationError:
+            logger.error(
+                "Anthropic API key is invalid (401). "
+                "Set a valid ANTHROPIC_API_KEY to enable LLM resolution. "
+                "Skipping all remaining unresolved publications."
+            )
+            # Keep already-processed pubs + current + everything not yet reached
+            resolved_publications.extend(state["publications"][i:])
+            return {**state, "publications": resolved_publications}
         except Exception:
-            logger.exception(f"LLM chain failed to resolve publication: {pub['title']}")
+            logger.exception(f"Unexpected error resolving publication: {pub['title']}")
             resolved_url = None
             resolved_doi = pub.get("doi")
+            llm_confidence = 0.0
 
         resolved_publications.append(
-            {**pub, "resolved_url": resolved_url, "doi": resolved_doi}
+            {**pub, "resolved_url": resolved_url, "doi": resolved_doi, "confidence": llm_confidence}
         )
 
     return {**state, "publications": resolved_publications}

@@ -12,3 +12,9 @@ venv/
 
 # OS / tooling
 .DS_Store
+
+# Private / secrets — never commit
+PRIVATE.md
+
+# Claude Code local overrides (machine-specific paths, personal settings)
+.claude/settings.local.json

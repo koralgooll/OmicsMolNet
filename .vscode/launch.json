@@ -9,7 +9,34 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${file}",
-            "console": "internalConsole"
+            "console": "internalConsole",
+            "justMyCode": false
+        },
+        {
+            "name": "Scraper: --ids O00462",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "omicsmolnet_scraper_agent.cli",
+            "console": "integratedTerminal",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "justMyCode": false,
+            "args": [
+                "--ids", "O00462",
+                "--log-level", "DEBUG"
+            ]
+        },
+        {
+            "name": "Scraper: --config ids.yaml",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "omicsmolnet_scraper_agent.cli",
+            "console": "integratedTerminal",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "justMyCode": false,
+            "args": [
+                "--config", "/home/cezary/science/OmicsMolNet/packages/scraper_agent/configs/ids.yaml",
+                "--log-level", "DEBUG"
+            ]
         },
         {
             "name": "Pytest: core tests (current file)",
@@ -17,6 +44,7 @@
             "request": "launch",
             "module": "pytest",
             "console": "internalConsole",
+            "justMyCode": false,
             "args": [
                 "${file}",
                 "-q"

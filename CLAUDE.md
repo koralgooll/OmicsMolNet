@@ -1,5 +1,19 @@
 # OmicsMolNet — Claude Code guidelines
 
+## Claude Code memory (per-machine setup)
+
+Memory files live in `.claude/memory/` inside this repo and are tracked by git, so they sync across machines via `git pull`.
+
+On each new machine, add this once to `~/.claude/settings.json`:
+
+```json
+{
+  "autoMemoryDirectory": "/absolute/path/to/OmicsMolNet/.claude/memory"
+}
+```
+
+Replace the path with the actual clone location on that machine.
+
 ## Scripts and automation
 
 - Prefer **Python** for new scripts, CLI tools, one-off automation, and small utilities in this repository.

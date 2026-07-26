@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import argparse
 
+from omicsmolnet_scraper_agent.utils.logger import set_log_level
+
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -32,4 +34,21 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         choices=["DEBUG", "INFO", "WARNING", "ERROR"],
         help="Logging verbosity (default: INFO).",
     )
-    return parser.parse_args(argv)
+    parser.add_argument(
+        "--uniprot-resolve-missing-publications",
+        dest="uniprot_resolve_missing_publications",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help=(
+            "Call the LLM to resolve publications with no PubMed URL or DOI "
+            "(default: enabled). Use --no-uniprot-resolve-missing-publications to skip."
+        ),
+    )
+    args = parser.parse_args(argv)
+
+    set_log_level(args.log_level)
+
+    if not args.config and not args.ids:
+        parser.error("Provide at least --config or --ids (or both).")
+
+    return args
