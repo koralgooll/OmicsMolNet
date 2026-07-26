@@ -20,6 +20,7 @@ dependencies = [
 
 [project.scripts]
 omicsmolnet-scraper = "omicsmolnet_scraper_agent.cli:main"
+omicsmolnet-pdf = "omicsmolnet_scraper_agent.cli_pdf:main"
 
 [project.optional-dependencies]
 test = ["pytest"]

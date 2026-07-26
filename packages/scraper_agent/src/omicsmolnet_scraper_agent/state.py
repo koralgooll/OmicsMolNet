@@ -13,6 +13,13 @@ class Publication(TypedDict):
     other_links: list[str]
     resolved_url: str | None
     confidence: float  # 1.0 for pubmed_url/doi from UniProt; LLM score for resolved_url
+    # Phase 2: full-text download fields
+    is_open_access: bool | None
+    oa_status: str | None   # "gold" | "hybrid" | "bronze" | "green" | "closed"
+    pdf_url: str | None
+    pdf_path: str | None
+    xml_url: str | None
+    xml_path: str | None
 
 
 class IdState(TypedDict):

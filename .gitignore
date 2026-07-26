@@ -18,3 +18,4 @@ PRIVATE.md
 
 # Claude Code local overrides (machine-specific paths, personal settings)
 .claude/settings.local.json
+output/*

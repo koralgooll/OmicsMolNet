@@ -52,6 +52,21 @@
             ]
         },
         {
+            "name": "PDF Download: phase 1 → phase 2",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "omicsmolnet_scraper_agent.cli_pdf",
+            "console": "integratedTerminal",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "justMyCode": false,
+            "args": [
+                "--input", "${workspaceFolder}/output/results_phase_1.json",
+                "--output-dir", "${workspaceFolder}/output/out_phase_2/",
+                "--output", "${workspaceFolder}/output/results_phase_2.json",
+                "--log-level", "DEBUG"
+            ]
+        },
+        {
             "name": "Pytest: core tests (current file)",
             "type": "debugpy",
             "request": "launch",

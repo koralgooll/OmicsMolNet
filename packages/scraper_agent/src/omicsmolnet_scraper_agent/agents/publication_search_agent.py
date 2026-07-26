@@ -1,25 +1,20 @@
-"""LLM-driven agent for resolving publications that have no PubMed URL or DOI.
+"""LLM-driven chain for resolving publications that have no PubMed URL or DOI.
 
 Used as a fallback node in the graph when the UniProt API returns a publication
 with no external identifiers.
 
-Architecture:
-  - build_publication_search_chain() → prompt | llm.with_structured_output(PublicationResolution)
-    Used now: LLM reasons from its own knowledge to return a structured result.
-  - build_publication_search_agent() → ReAct agent with real search tools.
-    Intended for Phase 2 when search_pubmed_by_title / search_crossref_by_doi are implemented.
+Phase 1: build_publication_search_chain() → prompt | llm.with_structured_output(PublicationResolution)
+Phase 2 (PDF download): see agents/publication_pdf_agent.py
 """
 
 from __future__ import annotations
 
 import os
-from typing import Any  # noqa: F401 — kept for build_publication_search_agent return type
+from typing import Any
 
 import anthropic
 from langchain_anthropic import ChatAnthropic
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.tools import tool
-from langgraph.prebuilt import create_react_agent  # type: ignore[import]  # Pylance stubs incorrect
 from pydantic import BaseModel, Field
 
 from omicsmolnet_scraper_agent.state import IdState, Publication
@@ -82,41 +77,6 @@ def build_publication_search_chain() -> Any:
     """
     llm = ChatAnthropic(model=_MODEL)
     return _SEARCH_PROMPT | llm.with_structured_output(PublicationResolution, include_raw=True)
-
-
-# ---------------------------------------------------------------------------
-# Phase 2: ReAct agent with real external search tools
-# ---------------------------------------------------------------------------
-
-
-@tool
-def search_pubmed_by_title(title: str, authors: str) -> str:
-    """Search PubMed for a publication by title and author names.
-
-    Returns a PubMed URL (https://pubmed.ncbi.nlm.nih.gov/PMID/) if found,
-    or an empty string if the publication cannot be located.
-    """
-    raise NotImplementedError("PubMed search tool not yet implemented")
-
-
-@tool
-def search_crossref_by_doi(doi: str) -> str:
-    """Resolve a DOI to a full article URL via the CrossRef API.
-
-    Returns the resolved URL or an empty string.
-    """
-    raise NotImplementedError("CrossRef DOI lookup not yet implemented")
-
-
-def build_publication_search_agent() -> Any:
-    """Build a LangGraph ReAct agent that can call external search tools.
-
-    Phase 2: use this instead of build_publication_search_chain() once
-    search_pubmed_by_title and search_crossref_by_doi are implemented.
-    """
-    llm = ChatAnthropic(model=_MODEL)
-    tools = [search_pubmed_by_title, search_crossref_by_doi]
-    return create_react_agent(llm, tools)
 
 
 # ---------------------------------------------------------------------------

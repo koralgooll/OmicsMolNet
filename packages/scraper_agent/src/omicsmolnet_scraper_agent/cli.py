@@ -9,6 +9,7 @@ Usage:
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 from omicsmolnet_scraper_agent.graph import build_graph
@@ -33,7 +34,9 @@ def main(argv: list[str] | None = None) -> None:
     output = json.dumps(final_state["results"], indent=2, ensure_ascii=False)
 
     if args.output:
-        Path(args.output).write_text(output, encoding="utf-8")
+        output_path = Path(args.output)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        output_path.write_text(output, encoding="utf-8")
         logger.info(f"Results written to {args.output}")
     else:
         sys.stdout.write(output + "\n")
