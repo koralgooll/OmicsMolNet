@@ -26,6 +26,19 @@
             ]
         },
         {
+            "name": "Scraper: --ids P02649",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "omicsmolnet_scraper_agent.cli",
+            "console": "integratedTerminal",
+            "python": "${workspaceFolder}/.venv/bin/python",
+            "justMyCode": false,
+            "args": [
+                "--ids", "P02649",
+                "--log-level", "DEBUG"
+            ]
+        },
+        {
             "name": "Scraper: --config ids.yaml",
             "type": "debugpy",
             "request": "launch",
